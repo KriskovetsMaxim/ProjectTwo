@@ -1,0 +1,73 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+$color-blue: #5290EA
+$color-orange: #F28B64
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.main-section
+    height: 800px
+    background-color: #F0F0F0
+    padding-top: 16px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        &:last-child
+            margin: 0
+
+
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 4
+    &__rectangle-blue
+        position: absolute
+        z-index: 2
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        background-color: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64deg)
+    &__rectangle-orange
+        position: absolute
+        z-index: 3
+        top: 160px
+        left: -30px
+        width: 618.43px
+        height: 220px
+        background-color: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-50.81deg)
+    &__rectangle-grey
+        position: absolute
+        z-index: 1
+        width: 608.97px
+        height: 220px
+        left: 10px
+        top: 190px
+        background: #E2E2E2
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-36.15deg)
