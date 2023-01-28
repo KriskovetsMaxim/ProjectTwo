@@ -365,9 +365,27 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regilar;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "MontserratT";
+  font-weight: regilar;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-section {
@@ -407,6 +425,7 @@ table {
 .nav-menu__list-item {
   margin-right: 64px;
   font-size: 18px;
+  font-weight: bold;
 }
 .nav-menu__list-item:last-child {
   margin: 0;
@@ -498,6 +517,7 @@ table {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 .title__hr {
   position: absolute;
@@ -624,6 +644,7 @@ table {
   transform: rotate(90deg);
   top: 144px;
   right: -45px;
+  font-weight: bold;
 }
 
 .icons-item {
@@ -639,6 +660,7 @@ table {
 }
 .icons-item__text b {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .third-section {
@@ -680,4 +702,23 @@ table {
   position: absolute;
   top: -120px;
   right: -120px;
+}
+
+.title__hr_top {
+  bottom: 75px;
+}
+
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

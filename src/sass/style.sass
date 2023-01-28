@@ -4,12 +4,31 @@
 *
     box-sizing: border-box
 
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regilar
+    font-style: normal
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+
+html
+    font-family: "MontserratT"
+    font-weight: regilar
+
 $color-blue: #5290EA
 $color-orange: #F28B64
 
 .container
     max-width: 1140px
     margin: 0 auto
+    position: relative
 
 .main-section
     position: relative
@@ -43,6 +62,7 @@ $color-orange: #F28B64
     &__list-item
         margin-right: 64px
         font-size: 18px
+        font-weight: bold
         &:last-child
             margin: 0
 
@@ -121,6 +141,7 @@ $color-orange: #F28B64
 .title
     font-size: 72px
     position: relative
+    font-weight: bold
     &__hr
         position: absolute
         width: 65px
@@ -227,6 +248,7 @@ $color-orange: #F28B64
         transform: rotate(90deg)
         top: 144px
         right: -45px
+        font-weight: bold
 
 .icons-item
     display: inline-flex
@@ -238,6 +260,7 @@ $color-orange: #F28B64
         font-size: 18px
         b
             font-size: 48px
+            font-weight: bold
 
 
 
@@ -275,3 +298,20 @@ $color-orange: #F28B64
         position: absolute
         top: -120px
         right: -120px
+
+.title__hr_top
+    bottom: 75px
+
+
+.footer
+    &__container
+        min-height: 272px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0px
+    &__title
+        margin-bottom: 20px
