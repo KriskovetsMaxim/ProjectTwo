@@ -639,4 +639,45 @@ table {
 }
 .icons-item__text b {
   font-size: 48px;
+}
+
+.third-section {
+  min-height: 640px;
+  background: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  z-index: 0;
+  padding-top: 46px;
+  padding-left: 167px;
+}
+.third-section__second-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  max-width: 480px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  z-index: -1;
+  top: 140px;
+  left: 110px;
+}
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: -120px;
+  right: -120px;
 }/*# sourceMappingURL=style.css.map */
